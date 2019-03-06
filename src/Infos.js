@@ -1,12 +1,12 @@
 import React from 'react'
 
 function Infos({ lives }) {
-    const heart = '\u2764 '
-    const hearts = heart.repeat(lives)
+    const HEART_SYMBOL = '\u2764 '
+    const hearts = HEART_SYMBOL.repeat(lives)
 
     return (
         <div className="lives">
-            {lives !== 0 && <h2>Vies restantes : {hearts}</h2>}
+            <h2>Vies restantes : {hearts}</h2>
         </div>
     )
 }

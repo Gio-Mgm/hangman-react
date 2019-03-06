@@ -1,16 +1,14 @@
 import React from 'react'
 
 function Word({wordToFind, usedLetters}) {
-    const phrase = wordToFind.split('').map((letter, index) => {
-        return (
-            <span key={index}>
-                {!letter.match(/[a-zA-Z]/) ||
-                    usedLetters.includes(letter) ? letter : "_"}&nbsp;
-            </span>
-        )
-    })
+    const word = wordToFind.split('').map((letter, index) => {
+        return usedLetters.includes(letter) ? letter : "_"
+    }).join('')
+
     return (
-        <div className="actualWord">{phrase}</div>
+        <div className="actual-word">
+            <p id="actualWord">{word}</p>
+        </div>
     )
 }
 

@@ -42,13 +42,6 @@ function Form() {
                     />
                 </label>
             </div>
-            <label htmlFor="round">Choisissez le nombre de manches gagnantes
-                <select className="" name="round" id="round">
-                    <option>1</option>
-                    <option>3</option>
-                    <option>5</option>
-                </select>
-            </label>
         </form>
     )
 }

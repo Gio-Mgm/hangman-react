@@ -14,7 +14,7 @@ h1 {
 }
 .keyboard {
     background-color: #5EC1CF;
-    margin: 20px 24% 0;
+    margin: 20px 20% 0;
     padding: 1.5em  0;
     border-radius: 25px
 }
@@ -31,7 +31,7 @@ h1 {
 	display:inline-block;
 	cursor:pointer;
 	color:black;
-	font-size:1.25em;
+	font-size:2em;
 	font-weight:bold;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
@@ -43,4 +43,14 @@ h1 {
 .key:active {
 	position:relative;
 	top:1px;
+}
+
+.used {
+    color: red;
+    opacity: 0.3
+}
+
+.actual-word {
+    margin-top: 1.5em;
+    font-size: 3em;
 }
